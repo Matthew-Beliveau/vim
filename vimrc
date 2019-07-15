@@ -1,14 +1,20 @@
 " Pathogen {{{
 execute pathogen#infect()
-call pathogen#helptags()
+execute pathogen#helptags()
+filetype off
 syntax on
 filetype plugin indent on
 " }}}
-" Colors {{{
-syntax enable " enable syntax pro
-set background=dark " set background to dark for solarized
+" Colors {{{ 
+set background=dark " set background to dark
+" Solarized {{{
 "colorscheme solarized " colorscheme might find new one
 "call togglebg#map("<F5>") " toggle background function
+" }}}
+"  Dracula {{{
+set t_Co=256
+color dracula
+" }}}
 " }}}
 " Spaces, Tabs, & Indentation {{{
 set tabstop=8 " number of visual spaces per TAB
@@ -21,9 +27,9 @@ setlocal softtabstop=2
 setlocal textwidth=79
 setlocal fo-=ro fo+=cql
 "auto bracket
-inoremap { {<CR><BS>}<Esc>ko<tab>
-inoremap [<CR> [<CR>]<Esc>ko<tab>
-inoremap (<CR> (<CR>)<Esc>ko<tab>
+inoremap { {<CR><BS>}<Esc>ko
+"inoremap [<CR> [<CR>]<Esc>ko<tab>
+"inoremap (<CR> (<CR>)<Esc>ko<tab>
  " }}}
 " UI config {{{
 set number " show line numbers

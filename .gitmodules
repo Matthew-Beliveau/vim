@@ -1,3 +1,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim.git
+[submodule "bundle/solarized-theme"]
+	path = bundle/solarized-theme
+	url = git://github.com/altercation/vim-colors-solarized.git
